@@ -215,5 +215,5 @@ warped_corrected_im2 = correct_colours(im1, warped_im2, landmarks1)
 
 output_im = im1 * (1.0 - combined_mask) + warped_corrected_im2 * combined_mask
 
-cv2.imwrite(f'{sys.argv[3]}/{sys.argv[1]}', output_im)
+cv2.imwrite(f'{sys.argv[3]}/{sys.argv[1].split('/')[-1]}', output_im)
 
